@@ -1,7 +1,7 @@
 body {
   width: 200px;
   padding: 10px;
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Arial, sans-serif;
 }
 
 h1 {
@@ -20,16 +20,28 @@ li {
 
 button {
   width: 100%;
-  padding: 5px;
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
-  border-radius: 3px;
+  padding: 10px 15px;
+  background: #f0f0f0;
+  border: none;
+  border-radius: 35px;
   cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
 
 button:hover {
   background-color: #e0e0e0;
-  border: 1px solid #15ff00;
+  box-shadow: 0 6px 10px rgba(21, 255, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+button:active {
+  background: linear-gradient(135deg, #5ff033, #33fd00);
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2) inset;
 }
 
 #currentEngine {
